@@ -1,20 +1,18 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Pokedex
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="container">
+    <strong>Buscador de Pokémon</strong>
+    <mat-form-field class="pokemon-form-field">
+      <mat-label>Nombre</mat-label>
+      <input type="text" matInput placeholder="Nombre de Pókemon" [(ngModel)]="pokemonForm.pokemonName">
+    </mat-form-field>
+    <button mat-raised-button (click)="buscarPokemon()">Buscar</button>
   </div>
 </ion-content>

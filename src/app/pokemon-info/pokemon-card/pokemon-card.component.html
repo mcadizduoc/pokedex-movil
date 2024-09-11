@@ -1,0 +1,23 @@
+<div *ngIf="pokemonInfo === null; else poke_info">Pokémon no encontrado</div>
+
+<ng-template #poke_info>
+  <mat-card class="example-card" appearance="outlined">
+    <mat-card-header>
+      <div
+        mat-card-avatar
+        class="pokemon-avatar"
+        [style]="'background-image: url(\'' + pokemonInfo?.image + '\')'"
+      ></div>
+      <mat-card-title>{{ pokemonInfo?.name }}</mat-card-title>
+      <mat-card-subtitle>{{
+        pokemonInfo?.types?.join(", ")
+      }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <ul>
+        <li>Weight: {{ pokemonInfo?.weight }} lbs.</li>
+        <li>Height: {{ pokemonInfo?.height }}"</li>
+      </ul>
+    </mat-card-content>
+  </mat-card>
+</ng-template>
