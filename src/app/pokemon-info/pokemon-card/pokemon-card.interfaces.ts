@@ -4,4 +4,5 @@ export interface PokemonInfo {
     weight: number;
     height: number;
     types: string[];
+    entry: string;
 }

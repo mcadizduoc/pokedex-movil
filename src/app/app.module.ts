@@ -7,6 +7,7 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { PokemonCardComponent } from './pokemon-info/pokemon-card/pokemon-card.component';
 
 @NgModule({
   declarations: [AppComponent],

@@ -9,6 +9,7 @@ import { PokemonInfoPageRoutingModule } from './pokemon-info-routing.module';
 
 import { PokemonInfoPage } from './pokemon-info.page';
 import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
+import { PokemonInfoEntryComponent } from './pokemon-info-entry/pokemon-info-entry.component';
 
 @NgModule({
   imports: [
@@ -18,6 +19,6 @@ import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
     PokemonInfoPageRoutingModule,
     MatCardModule
   ],
-  declarations: [PokemonInfoPage, PokemonCardComponent]
+  declarations: [PokemonInfoPage, PokemonCardComponent, PokemonInfoEntryComponent]
 })
 export class PokemonInfoPageModule {}
